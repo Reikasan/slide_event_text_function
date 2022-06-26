@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+} 
+body { 
+    margin: 0;
+    background-color: #fffffa;
+}
+nav {
+    height: 90px;
+    padding: 10px;
+    border-bottom: solid 1px #616163;
+}
+nav div.logo {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #FF312E;
+}
+#sidebar {
+    width: 300px;
+
+    background-color: #47A8BD;
+    z-index: 20;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+div#main {
+    width: calc(100vw - 300px);
+    padding: 10px;
+}
+section#event {
+    overflow: hidden;
+}
+div.event-header-container {
+    display: flex;
+    cursor: pointer;
+}
+div.event-header-container > div.slide-text{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+div.event-header-container img {
+    height: 100%;
+    margin-right: 5px;
+}
+div.event-text {
+    white-space: nowrap;
+}
